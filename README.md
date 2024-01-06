@@ -35,7 +35,7 @@ To run the application locally, follow these steps:
 **index.html**: Main page for the web application.
 
 ## Model
-The machine learning model used for emotion detection is stored in the file best_model.h5. It has been trained on a dataset containing facial expressions of anger, happiness, and sadness. to see all the details of the training check the model_training.ipyn
+The machine learning model used for emotion detection is stored in the file **`best_model.h5`**. It has been trained on a dataset containing facial expressions of anger, happiness, and sadness. To see all the details of the training, check the **`model_training.ipynb`** notebook in the [model_training](model_training) directory.
 
 
 ## Contributors
