@@ -2,50 +2,44 @@
 
 ## Overview
 
-This repository contains a machine learning model for emotion detection. The model is trained to recognize three main emotions: happy, sad, and angry.
-
-## Features
-
-- **Emotion Detection**: Users can upload images of human faces in any format, and the model will predict whether the person appears happy, sad, or angry.
-- **MongoDB Integration**: Predicted emotion labels are stored in a MongoDB database. This data may be useful for retraining the model to achieve better generalization.
-
-## Usage
-
-1. **Upload an Image:**
-   - Users submit images with human faces for emotion prediction.
-
-2. **Receive Emotion Prediction:**
-   - The model processes the uploaded image and provides predictions for happiness, sadness, and anger.
-
-3. **MongoDB Integration:**
-   - Predicted emotions are stored in a MongoDB database for potential future use.
-
-4. **Model Retraining (Optional):**
-   - The stored data in MongoDB can be leveraged to retrain the model, aiming for improved generalization.
+This repository contains a web application for emotion detection using a machine learning model. The model is trained to classify human faces into three main emotions: angry, happy, and sad.
 
 ## Getting Started
 
-### Prerequisites
+To run the application locally, follow these steps:
 
-- Python 3.x
-- [List any specific dependencies, e.g., TensorFlow, Flask]
-- MongoDB installed and configured
+1. Clone the repository to your local machine.
+   
+2. Install the required dependencies.
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+3. Run the Flask web application.
+   ```bash
+   python app.py
+   ```
+   
+4.Open your web browser and navigate to http://localhost:5000.
 
-### Installation
+5.Upload an image of a human face to see the emotion prediction.
 
-1. **Clone the Repository:**
+## Project Structure
 
-    ```bash
-    git clone https://github.com/your-username/your-repository.git
-    ```
+**app.py**: Flask web application for serving the model and handling predictions.
+**static/**: Static files including images and styles.
+**image.jpg**: Placeholder image displayed on the web page.
+**css/style.css**: Styles for the web page.
+**js/script.js**: JavaScript code for handling user interactions.
+**templates/**: HTML templates for the web pages.
+**index.html**: Main page for the web application.
 
-2. **Install Dependencies:**
+## Model
+The machine learning model used for emotion detection is stored in the file best_model.h5. It has been trained on a dataset containing facial expressions of anger, happiness, and sadness. to see all the details of the training check the model_training.ipyn
 
-    ```bash
-    pip install -r requirements.txt
-    ```
 
-## Contrib
+## Contributors
+Zerrad Nizar
 
 
 
