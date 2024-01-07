@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detection</h1>
+        <div class="image-container">
+            <img id="selected-image" src="{{ url_for('static', filename='image.jpg') }}" alt="Selected Image">
+        </div>
+        <label for="file-upload" class="file-upload-label">
+            Choisir un fichier
+            <input type="file" id="file-upload" class="visually-hidden">
+        </label>
+        <button id="predict-button" class="btn-primary">Predict</button>
+        <!-- Add a div to display the prediction message -->
+        <div id="prediction-message"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
