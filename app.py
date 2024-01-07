@@ -16,7 +16,8 @@ def predict_emotion(image):
     image = Image.open(BytesIO(image))
     
     # Convert the image to grayscale
-    image = image.convert('L')
+    image = image.convert('RGB')
+    image = tf.image.rgb_to_grayscale(image)
     
     image = image.resize((256, 256))
     image = tf.keras.preprocessing.image.img_to_array(image)
