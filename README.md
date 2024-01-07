@@ -9,16 +9,16 @@ This repository contains a web application for emotion detection using a machine
 To run the application locally, follow these steps:
 
 1. Clone the repository to your local machine.
- ```bash
+   ```bash
    git clone https://github.com/nizar-zerrad/Emotion_Detection.git
    ```
    
-3. Install the required dependencies.
+2. Install the required dependencies.
    ```bash
    pip install -r requirements.txt
    ```
    
-4. Run the Flask web application.
+3. Run the Flask web application.
    ```bash
    python app.py
    ```
