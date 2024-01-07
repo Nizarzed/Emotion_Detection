@@ -41,6 +41,10 @@ The machine learning model used for emotion detection is stored in the file **`b
 ## Contributors
 Zerrad Nizar
 
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+
 
 
 
